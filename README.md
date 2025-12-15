@@ -17,7 +17,8 @@ The repository contains a single JSON file (`arch-templates.json`) that stores a
       "type": "project-type",
       "name": "Architecture Name",
       "gitRepo": "https://github.com/org/repo",
-      "contactEmail": "contact@example.com"
+      "contactEmail": "contact@example.com",
+      "branch": "master"
     }
   ]
 }
@@ -29,6 +30,7 @@ The repository contains a single JSON file (`arch-templates.json`) that stores a
 - **name**: A descriptive name for the architecture template
 - **gitRepo**: URL to the Git repository containing the template
 - **contactEmail**: Contact email for questions or issues related to this architecture
+- **branch**: Git branch to use for this template (defaults to `master`)
 
 ## Usage
 
@@ -56,6 +58,7 @@ You'll be prompted to enter:
 - Architecture name
 - Git repository URL
 - Contact email
+- Git branch (optional, defaults to master)
 
 ### Removing an Architecture
 

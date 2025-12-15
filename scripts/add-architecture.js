@@ -24,6 +24,7 @@ async function addArchitecture() {
   const name = await question('Enter architecture name: ');
   const gitRepo = await question('Enter Git repository URL: ');
   const contactEmail = await question('Enter contact email: ');
+  const branch = await question('Enter Git branch (default: master): ');
 
   if (!type || !name || !gitRepo || !contactEmail) {
     console.error('\n❌ Error: All fields are required!');
@@ -54,7 +55,8 @@ async function addArchitecture() {
       type: type.trim(),
       name: name.trim(),
       gitRepo: gitRepo.trim(),
-      contactEmail: contactEmail.trim()
+      contactEmail: contactEmail.trim(),
+      branch: branch.trim() || 'master'
     };
 
     data.architectures.push(newArchitecture);
