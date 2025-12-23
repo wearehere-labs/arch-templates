@@ -3,7 +3,7 @@
     {
       "type": "web-application",
       "name": "Modern Full-Stack Web Application",
-      "gitRepo": "bitbucket.org/alexkozlovwearehere/simple-vue-arch.git",
+      "gitRepo": "https://github.com/wearehere-labs/simple-vue-arch.git",
       "contactEmail": "akozlov@dogezer.com",
       "branch": "master"
     }
